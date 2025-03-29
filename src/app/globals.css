@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.space-mono-regular {
+  font-family: "Space Mono", serif;
+  font-weight: 500;
+  line-height: 1.5;
+  /* transform: scaleY(1.1); */
+  /* display: inline-block; */
+  /* transform: scale(1.1); */
+  /* font-style: normal; */
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#chatIcon {
+  animation: chat 4s infinite ease-in-out; /* Updated easing and removed reverse */
+}
+
+@keyframes chat {
+  0% {
+    color: #ff735a;
+  }
+  50% {
+    color: #e6a89f; /* Define the middle point for smooth transition */
+  }
+  100% {
+    color: #ff735a; /* Back to the initial color */
+  }
+}
+
+body {
+  font-family: "Monaspace Neon",monospace;
+  font-size: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
